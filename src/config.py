@@ -1,7 +1,7 @@
 import configparser
 import sys
 
-from src import printcolors as pc
+from src import colors as pc
 
 try:
     config = configparser.ConfigParser(interpolation=None)
