@@ -4,6 +4,9 @@ import sys
 import urllib
 import os
 import codecs
+import random
+import terminaltables
+import bs4
 from pathlib import Path
 
 import requests
