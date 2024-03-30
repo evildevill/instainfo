@@ -1,4 +1,4 @@
-FROM python:3.9.2-alpine3.13 as build
+FROM python:3.13.0a4-slim as build
 WORKDIR /wheels
 RUN apk add --no-cache \
     ncurses-dev \
@@ -7,7 +7,7 @@ COPY docker_reqs.txt /opt/instainfo/requirements.txt
 RUN pip3 wheel -r /opt/instainfo/requirements.txt
 
 
-FROM python:3.9.2-alpine3.13
+FROM python:3.13.0a4-slim
 WORKDIR /home/instainfo
 RUN adduser -D instainfo
 
